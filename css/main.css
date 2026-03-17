@@ -495,7 +495,7 @@
   .hero--page .hero__inner {
     max-width: 700px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 var(--gutter);
   }
 
   .hero--page .hero__sub { margin: 0 auto; }
