@@ -152,7 +152,19 @@
   }
 
   .grid--auto {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr;
+  }
+
+  @media (width >= 36rem) {
+    .grid--auto {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (width >= 60rem) {
+    .grid--auto {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   @media (width >= 48rem) {
@@ -297,9 +309,13 @@
     white-space: nowrap;
   }
 
+  /* Desktop phone — only the standalone one outside the menu */
   @media (width >= 48rem) {
-    .nav__phone { display: flex; align-items: center; gap: var(--space-2); }
+    .nav__phone:not(.nav__phone--mobile) { display: flex; align-items: center; gap: var(--space-2); }
   }
+
+  /* Mobile phone inside menu — only visible in open mobile menu */
+  .nav__phone--mobile { display: none; }
 
   .nav__phone svg {
     width: 1rem;
@@ -362,6 +378,13 @@
       font-weight: 600;
       margin-top: auto;
       text-decoration: none;
+      font-size: var(--text-body);
+    }
+
+    .nav__menu .nav__phone--mobile svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      fill: var(--color-brand-accent);
     }
   }
 
