@@ -211,8 +211,8 @@
 
   /* Desktop phone — only the standalone one, never the one inside the menu */
   .nav__phone {
-    color: var(--accent);
-    font-weight: 600;
+    color: var(--brand);
+    font-weight: 700;
     font-size: var(--small);
     text-decoration: none;
     display: none;
@@ -220,15 +220,16 @@
     gap: var(--s8);
     white-space: nowrap;
     margin-left: var(--s16);
-    padding: 6px 14px;
-    border: 1.5px solid transparent;
+    padding: 8px 18px;
+    background: var(--accent);
+    border: 1.5px solid var(--accent);
     border-radius: var(--radius);
-    transition: border-color 0.3s ease, background 0.3s ease;
+    transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   }
 
   .nav__phone:hover {
+    background: transparent;
     border-color: var(--accent);
-    background: rgba(196, 154, 60, 0.1);
     color: var(--accent);
   }
 
