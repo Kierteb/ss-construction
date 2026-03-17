@@ -3,13 +3,14 @@
  */
 const header = document.querySelector('.header');
 const toggle = document.querySelector('.nav__toggle');
-const menu = document.querySelector('.nav__menu');
+const menu = document.querySelector('.nav__links');
 const overlay = document.querySelector('.nav__overlay');
 const SCROLL_THRESHOLD = 60;
 
 function openMenu() {
+  if (!menu) return;
   menu.classList.add('is-open');
-  overlay.classList.add('is-visible');
+  if (overlay) overlay.classList.add('is-visible');
   toggle.setAttribute('aria-expanded', 'true');
   document.body.style.overflow = 'hidden';
   const firstLink = menu.querySelector('.nav__link');
@@ -17,15 +18,16 @@ function openMenu() {
 }
 
 function closeMenu() {
+  if (!menu) return;
   menu.classList.remove('is-open');
-  overlay.classList.remove('is-visible');
+  if (overlay) overlay.classList.remove('is-visible');
   toggle.setAttribute('aria-expanded', 'false');
   document.body.style.overflow = '';
   toggle.focus();
 }
 
 function isOpen() {
-  return menu.classList.contains('is-open');
+  return menu && menu.classList.contains('is-open');
 }
 
 if (toggle && menu) {
@@ -44,7 +46,7 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-/* Scroll state — adds .is-scrolled to header */
+/* Scroll state */
 function handleScroll() {
   if (!header) return;
   if (window.scrollY > SCROLL_THRESHOLD) {

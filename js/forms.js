@@ -3,7 +3,7 @@
  */
 const form = document.querySelector('.contact-form');
 if (form) {
-  const successEl = document.querySelector('.form__success');
+  const successEl = document.querySelector('.form-success');
 
   function showError(field, message) {
     const errorEl = document.getElementById(field.id + '-error');

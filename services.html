@@ -18,7 +18,7 @@
   <meta property="og:site_name" content="SS Construction">
   <meta property="og:locale" content="en_GB">
 
-  <!-- Google Fonts — async -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
@@ -27,7 +27,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/main.css">
 
-  <!-- GA4 placeholder -->
+  <!-- GA4: Replace G-XXXXXXXXXX with actual measurement ID -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -38,166 +38,190 @@
 </head>
 <body>
 
-  <!-- Skip link -->
-  <a href="#main" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- Header -->
-  <header class="header header--solid">
-    <div class="header__inner container">
-      <a href="index.html" class="logo" aria-label="SS Construction home">
-        <img src="images/logo.svg" alt="" class="logo__icon" width="48" height="48" aria-hidden="true">
-        <span class="logo__text">SS Construction</span>
-      </a>
-
-      <nav class="nav" aria-label="Main navigation">
-        <ul class="nav__menu" role="list" id="nav-menu">
-          <li><a href="index.html" class="nav__link">Home</a></li>
-          <li><a href="services.html" class="nav__link" aria-current="page">Services</a></li>
-          <li><a href="about.html" class="nav__link">About</a></li>
-          <li><a href="contact.html" class="nav__link">Contact</a></li>
-          <li>
-            <a href="tel:+447513440431" class="nav__phone nav__phone--mobile" aria-label="Call us on 07513 440 431">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.49a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.58 1 1 0 0 1-.24 1.01l-2.2 2.2Z"/></svg>
-              07513 440 431
-            </a>
-          </li>
-        </ul>
-
-        <a href="tel:+447513440431" class="nav__phone" aria-label="Call us on 07513 440 431">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.49a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.58 1 1 0 0 1-.24 1.01l-2.2 2.2Z"/></svg>
-          07513 440 431
+  <header class="header">
+    <div class="container">
+      <div class="header__bar">
+        <a href="index.html" class="logo" aria-label="SS Construction home">
+          <img src="images/logo.svg" alt="" class="logo__icon" width="48" height="48" aria-hidden="true">
+          <span class="logo__text">SS Construction</span>
         </a>
 
-        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        </button>
-      </nav>
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav__links" id="primary-nav" role="list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="services.html" class="nav__link" aria-current="page">Services</a></li>
+            <li><a href="about.html" class="nav__link">About</a></li>
+            <li><a href="contact.html" class="nav__link">Contact</a></li>
+            <li>
+              <a href="tel:07513440431" class="nav__phone nav__phone--mobile" aria-label="Call SS Construction">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 015.19 12.86a19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                07513 440 431
+              </a>
+            </li>
+          </ul>
+
+          <a href="tel:07513440431" class="nav__phone" aria-label="Call us on 07513 440 431">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 015.19 12.86a19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            07513 440 431
+          </a>
+
+          <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+            <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+              <rect y="4" width="24" height="2" fill="currentColor" rx="1"/>
+              <rect y="11" width="24" height="2" fill="currentColor" rx="1"/>
+              <rect y="18" width="24" height="2" fill="currentColor" rx="1"/>
+            </svg>
+          </button>
+        </nav>
+      </div>
     </div>
 
     <div class="nav__overlay" aria-hidden="true"></div>
   </header>
 
-  <!-- Main content -->
-  <main id="main">
+  <main id="main-content">
 
-    <!-- Page hero -->
+    <!-- Page Hero -->
     <section class="hero hero--page" style="background-image: url('images/kitchen-extension.jpg');">
-      <div class="hero__content container">
-        <h1>Our Services</h1>
-        <p class="hero__text">From ground-up extensions to precision brickwork, we handle every stage of your project with care and skill.</p>
+      <div class="container">
+        <div class="hero__inner">
+          <h1>Our Services</h1>
+          <p class="hero__sub">From ground-up extensions to precision brickwork, we handle every stage of your project with care and skill.</p>
+        </div>
       </div>
     </section>
 
-    <!-- Service 1: Extensions -->
+    <!-- Extensions -->
     <section class="section" aria-labelledby="service-extensions">
       <div class="container">
-        <div class="service-detail">
-          <div class="service-detail__content">
+        <div class="service-block">
+          <img src="images/extension-bifold.jpg" alt="Completed rear extension with bifold doors in South Essex" class="service-block__img" width="800" height="600" loading="lazy" decoding="async">
+          <div class="service-block__body">
             <h2 id="service-extensions" data-reveal>Extensions</h2>
-            <p>Whether it's a single-storey rear extension or a large wraparound, we design and build extensions that transform how you use your home. Our team handles everything from foundations and steelwork to plastering, electrics, and the final finish.</p>
-            <p>We've completed kitchen extensions, living space extensions, and conservatory conversions across South Essex, always on time and within budget.</p>
-            <a href="contact.html" class="button button--accent">Discuss Your Extension</a>
-          </div>
-          <div class="service-detail__image">
-            <img src="images/extension-bifold.jpg" alt="Completed rear extension with bifold doors in South Essex" width="800" height="600" loading="lazy" decoding="async">
+            <p>We design and build extensions that transform how you use your home, handling everything from foundations to the final finish.</p>
+            <ul>
+              <li>Single and double-storey rear extensions</li>
+              <li>Wraparound and side-return extensions</li>
+              <li>Kitchen and living space extensions</li>
+              <li>Foundations, steelwork, plastering, and finishing</li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary">Discuss Your Extension</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Service 2: Loft Conversions -->
-    <section class="section section--alt" aria-labelledby="service-loft-conversions">
+    <!-- Loft Conversions -->
+    <section class="section section--warm" aria-labelledby="service-loft-conversions">
       <div class="container">
-        <div class="service-detail">
-          <div class="service-detail__content">
+        <div class="service-block service-block--flip">
+          <img src="images/loft-conversion.jpg" alt="Loft conversion structural work with timber framing and roof trusses" class="service-block__img" width="800" height="600" loading="lazy" decoding="async">
+          <div class="service-block__body">
             <h2 id="service-loft-conversions" data-reveal>Loft Conversions</h2>
-            <p>Turn unused roof space into a bedroom, office, or bathroom. We manage the full build, including structural alterations, dormers, Velux windows, insulation, plastering, and staircase installation.</p>
-            <p>Every loft conversion is built to Building Regulations, with all sign-offs handled by our team.</p>
-            <a href="contact.html" class="button button--accent">Plan Your Loft Conversion</a>
-          </div>
-          <div class="service-detail__image">
-            <img src="images/loft-conversion.jpg" alt="Loft conversion structural work with timber framing and roof trusses" width="800" height="600" loading="lazy" decoding="async">
+            <p>Turn unused roof space into a bedroom, office, or bathroom. We manage the full build from start to sign-off.</p>
+            <ul>
+              <li>Dormer and Velux loft conversions</li>
+              <li>Structural alterations and staircase installation</li>
+              <li>Full insulation and plastering</li>
+              <li>All Building Regulations sign-offs handled</li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary">Plan Your Loft Conversion</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Service 3: Garage Conversions -->
+    <!-- Garage Conversions -->
     <section class="section" aria-labelledby="service-garage-conversions">
       <div class="container">
-        <div class="service-detail">
-          <div class="service-detail__content">
+        <div class="service-block">
+          <img src="images/kitchen-extension.jpg" alt="Modern open-plan kitchen and living space from a garage conversion" class="service-block__img" width="800" height="600" loading="lazy" decoding="async">
+          <div class="service-block__body">
             <h2 id="service-garage-conversions" data-reveal>Garage Conversions</h2>
-            <p>A garage conversion is one of the most cost-effective ways to add a room to your home. We convert single and double garages into kitchens, living rooms, home offices, and more.</p>
-            <p>We handle all structural work, damp-proofing, flooring, plastering, and electrics to create a space that feels like it was always part of the house.</p>
-            <a href="contact.html" class="button button--accent">Get a Garage Conversion Quote</a>
-          </div>
-          <div class="service-detail__image">
-            <img src="images/kitchen-extension.jpg" alt="Modern open-plan kitchen and living space from a garage conversion" width="800" height="600" loading="lazy" decoding="async">
+            <p>One of the most cost-effective ways to add a room to your home, finished to feel like it was always part of the house.</p>
+            <ul>
+              <li>Single and double garage conversions</li>
+              <li>Kitchens, living rooms, and home offices</li>
+              <li>Damp-proofing, flooring, and electrics</li>
+              <li>Finished to match your existing home</li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary">Get a Quote</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Service 4: Roofing -->
-    <section class="section section--alt" aria-labelledby="service-roofing">
+    <!-- Roofing -->
+    <section class="section section--warm" aria-labelledby="service-roofing">
       <div class="container">
-        <div class="service-detail">
-          <div class="service-detail__content">
+        <div class="service-block service-block--flip">
+          <img src="images/extension-scaffolding.jpg" alt="Scaffolding around a property during roofing work" class="service-block__img" width="800" height="600" loading="lazy" decoding="async">
+          <div class="service-block__body">
             <h2 id="service-roofing" data-reveal>Roofing</h2>
-            <p>From flat roof replacements and fibreglass roofing to full re-tiles and leak repairs, we keep your home watertight. Our roofing work covers domestic and small commercial properties across Essex.</p>
-            <p>We use quality materials and proven methods to make sure every roof stands up to the British weather.</p>
-            <a href="contact.html" class="button button--accent">Book a Roof Inspection</a>
-          </div>
-          <div class="service-detail__image">
-            <img src="images/extension-scaffolding.jpg" alt="Scaffolding around a property during roofing work" width="800" height="600" loading="lazy" decoding="async">
+            <p>We keep your home watertight with quality materials and proven methods, covering domestic and small commercial properties.</p>
+            <ul>
+              <li>Flat roof replacements and fibreglass roofing</li>
+              <li>Full re-tiles and slate work</li>
+              <li>Leak repairs and maintenance</li>
+              <li>Domestic and small commercial properties</li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary">Book a Roof Inspection</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Service 5: New Builds and Outbuildings -->
+    <!-- New Builds and Outbuildings -->
     <section class="section" aria-labelledby="service-new-builds">
       <div class="container">
-        <div class="service-detail">
-          <div class="service-detail__content">
+        <div class="service-block">
+          <img src="images/rear-extension.jpg" alt="Newly built outbuilding with insulated walls and finished exterior" class="service-block__img" width="800" height="600" loading="lazy" decoding="async">
+          <div class="service-block__body">
             <h2 id="service-new-builds" data-reveal>New Builds and Outbuildings</h2>
-            <p>We build garden rooms, home offices, workshops, and outbuildings from the ground up. Whether you need extra space for work, storage, or leisure, we'll design and construct a standalone structure that's built to last.</p>
-            <p>Our outbuildings are fully insulated, weatherproofed, and finished to the same standard as the main property.</p>
-            <a href="contact.html" class="button button--accent">Discuss Your Project</a>
-          </div>
-          <div class="service-detail__image">
-            <img src="images/outbuilding-conversion.jpg" alt="Newly built outbuilding with insulated walls and finished exterior" width="800" height="600" loading="lazy" decoding="async">
+            <p>Standalone structures built from the ground up, whether you need extra space for work, storage, or leisure.</p>
+            <ul>
+              <li>Garden rooms and home offices</li>
+              <li>Workshops and storage buildings</li>
+              <li>Fully insulated and weatherproofed</li>
+              <li>Finished to the same standard as your main property</li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary">Discuss Your Project</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Service 6: Brickwork and Structural Work -->
-    <section class="section section--alt" aria-labelledby="service-brickwork">
+    <!-- Brickwork and Structural Work -->
+    <section class="section section--warm" aria-labelledby="service-brickwork">
       <div class="container">
-        <div class="service-detail">
-          <div class="service-detail__content">
+        <div class="service-block service-block--flip">
+          <img src="images/porch-extension.jpg" alt="Brickwork on a porch extension showing precise block laying" class="service-block__img" width="800" height="600" loading="lazy" decoding="async">
+          <div class="service-block__body">
             <h2 id="service-brickwork" data-reveal>Brickwork and Structural Work</h2>
-            <p>Solid foundations start with skilled brickwork. We handle blockwork, brick walls, retaining walls, lintels, RSJs, and all structural alterations. Whether it's part of a larger project or a standalone job, we get it right first time.</p>
-            <p>From opening up load-bearing walls to building boundary walls, our structural work is precise and built to code.</p>
-            <a href="contact.html" class="button button--accent">Get a Quote</a>
-          </div>
-          <div class="service-detail__image">
-            <img src="images/porch-extension.jpg" alt="Brickwork on a porch extension showing precise block laying" width="800" height="600" loading="lazy" decoding="async">
+            <p>Solid foundations start with skilled brickwork. Whether it's part of a larger project or a standalone job, we get it right first time.</p>
+            <ul>
+              <li>Blockwork and brick walls</li>
+              <li>Retaining walls and boundary walls</li>
+              <li>Lintels, RSJs, and structural openings</li>
+              <li>Precise, code-compliant structural work</li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary">Get a Quote</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA Band -->
-    <section class="cta-band" aria-labelledby="cta-heading">
+    <!-- CTA -->
+    <section class="cta" aria-labelledby="cta-heading">
       <div class="container">
-        <h2 id="cta-heading">Let's Talk About Your Project</h2>
-        <p>Every build starts with a conversation. Call us or fill in the form and we'll get back to you within 24 hours.</p>
-        <div class="cta-band__actions">
-          <a href="contact.html" class="button button--accent button--lg">Get Your Free Quote</a>
-          <a href="tel:+447513440431" class="cta-band__phone">07513 440 431</a>
+        <h2 id="cta-heading">Ready to Start Your Project?</h2>
+        <p>Get in touch for a free, no-obligation quote. We'll talk through your plans and give you an honest price.</p>
+        <div class="cta__actions">
+          <a href="contact.html" class="btn btn--primary">Get Your Free Quote</a>
+          <a href="tel:07513440431" class="cta__phone">07513 440 431</a>
         </div>
       </div>
     </section>
@@ -208,7 +232,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
-        <div class="footer__brand">
+        <div class="footer__about">
           <a href="index.html" class="logo" aria-label="SS Construction home">
             <img src="images/logo.svg" alt="" class="logo__icon" width="48" height="48" aria-hidden="true">
             <span class="logo__text">SS Construction</span>
@@ -218,9 +242,9 @@
 
         <div>
           <p class="footer__heading">Quick Links</p>
-          <ul class="footer__links" role="list">
+          <ul class="footer__nav" role="list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="services.html" aria-current="page">Services</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -229,25 +253,23 @@
         <div>
           <p class="footer__heading">Contact</p>
           <address>
-            <a href="tel:+447513440431">07513 440 431</a>
+            <a href="tel:07513440431">07513 440 431</a>
             <a href="mailto:ss.construction1@hotmail.com">ss.construction1@hotmail.com</a>
             <span>Grays, Essex</span>
           </address>
         </div>
       </div>
 
-      <div class="footer__bottom">
-        <p>&copy; 2026 SS Construction. All rights reserved.</p>
+      <div class="footer__line">
+        <p>&copy; <time datetime="2026">2026</time> SS Construction. All rights reserved.</p>
         <p>Website by <a href="https://deepwaterdesign.co.uk" target="_blank" rel="noopener noreferrer">Deepwater Design</a></p>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="js/nav.js" type="module"></script>
-  <script src="js/reveal.js" type="module"></script>
-  <script src="js/forms.js" type="module"></script>
-  <script src="js/tracking.js" type="module"></script>
+  <script type="module" src="js/nav.js"></script>
+  <script type="module" src="js/reveal.js"></script>
+  <script type="module" src="js/tracking.js"></script>
 
 </body>
 </html>
