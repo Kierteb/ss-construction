@@ -220,6 +220,16 @@
     gap: var(--s8);
     white-space: nowrap;
     margin-left: var(--s16);
+    padding: 6px 14px;
+    border: 1.5px solid transparent;
+    border-radius: var(--radius);
+    transition: border-color 0.3s ease, background 0.3s ease;
+  }
+
+  .nav__phone:hover {
+    border-color: var(--accent);
+    background: rgba(196, 154, 60, 0.1);
+    color: var(--accent);
   }
 
   @media (min-width: 769px) {
