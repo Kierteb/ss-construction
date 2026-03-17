@@ -432,6 +432,53 @@
 
   .hero__proof svg { color: var(--accent); flex-shrink: 0; }
 
+  /* --- Trust badges --- */
+  .trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: var(--s24);
+  }
+
+  .trust-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s8);
+    padding: 8px 16px;
+    border: 1.5px solid rgba(255,255,255,0.2);
+    border-radius: var(--radius);
+    color: var(--white);
+    font-size: var(--small);
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+  }
+
+  .trust-badge:hover {
+    border-color: var(--accent);
+    background: rgba(196, 154, 60, 0.1);
+    color: var(--white);
+  }
+
+  .trust-badge svg { width: 18px; height: 18px; color: var(--accent); flex-shrink: 0; }
+
+  .trust-badge__rating {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  /* Trust badges on light backgrounds */
+  .trust-badges--light .trust-badge {
+    border-color: var(--border);
+    color: var(--text);
+  }
+
+  .trust-badges--light .trust-badge:hover {
+    border-color: var(--accent);
+    background: rgba(196, 154, 60, 0.06);
+    color: var(--text);
+  }
+
   /* --- Page hero (inner pages) --- */
   .hero--page {
     min-height: auto;
@@ -892,6 +939,27 @@
 
   .footer__line a { color: rgba(255,255,255,0.35); text-decoration: none; }
   .footer__line a:hover { color: var(--accent); }
+
+  .footer__reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: var(--s16);
+  }
+
+  .footer__review-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(255,255,255,0.6);
+    font-size: 12px;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer__review-link:hover { color: var(--accent); }
+
+  .footer__review-link svg { width: 14px; height: 14px; color: var(--accent); }
 
   /* --- Reveal --- */
   @media (prefers-reduced-motion: no-preference) {

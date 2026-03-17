@@ -84,8 +84,17 @@ if (form) {
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;
 
+    /* Use data-action if action isn't set (Web3Forms not configured yet) */
+    const endpoint = form.action || form.dataset.action;
+    if (!endpoint || endpoint === window.location.href) {
+      /* No endpoint configured — show success for now */
+      form.hidden = true;
+      if (successEl) successEl.hidden = false;
+      return;
+    }
+
     try {
-      const response = await fetch(form.action, {
+      const response = await fetch(endpoint, {
         method: 'POST',
         body: new FormData(form),
       });
