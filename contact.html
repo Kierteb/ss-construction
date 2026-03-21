@@ -72,10 +72,10 @@
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- Header -->
-  <header class="header">
+  <header class="header header--transparent">
     <div class="container"><div class="header__bar">
       <a href="index.html" class="logo" aria-label="SS Construction home">
-        <img src="images/logo.svg" alt="" class="logo__icon" width="48" height="48" aria-hidden="true">
+        <img src="images/logo-final.png" alt="" class="logo__icon" width="48" height="48" aria-hidden="true">
         <span class="logo__text">SS Construction</span>
       </a>
 
@@ -123,112 +123,6 @@
       <div class="container">
         <div class="contact-layout">
 
-          <!-- Form -->
-          <div>
-            <h2 id="contact-heading" class="sr-only">Send an enquiry</h2>
-
-            <!-- WEB3FORMS: Replace [WEB3FORMS_ACCESS_KEY] with key from web3forms.com -->
-            <!-- WEB3FORMS: Change data-action to action once key is set up -->
-            <form data-action="https://api.web3forms.com/submit" method="POST" novalidate class="contact-form" aria-label="Contact enquiry form">
-              <input type="hidden" name="access_key" value="[WEB3FORMS_ACCESS_KEY]">
-              <input type="hidden" name="subject" value="New enquiry from ssc1.co.uk">
-              <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-
-              <!-- Full Name -->
-              <div class="field">
-                <label for="full-name">Full Name <span aria-hidden="true">*</span></label>
-                <input
-                  type="text"
-                  id="full-name"
-                  name="full-name"
-                  autocomplete="name"
-                  required
-                  aria-required="true"
-                  aria-describedby="full-name-error"
-                  placeholder="John Smith"
-                >
-                <span class="field__error" id="full-name-error" role="alert" aria-live="polite"></span>
-              </div>
-
-              <!-- Phone -->
-              <div class="field">
-                <label for="phone">Phone <span aria-hidden="true">*</span></label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  autocomplete="tel"
-                  required
-                  aria-required="true"
-                  aria-describedby="phone-error"
-                  placeholder="07700 900000"
-                >
-                <span class="field__error" id="phone-error" role="alert" aria-live="polite"></span>
-              </div>
-
-              <!-- Email -->
-              <div class="field">
-                <label for="email">Email <span aria-hidden="true">*</span></label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  autocomplete="email"
-                  required
-                  aria-required="true"
-                  aria-describedby="email-error"
-                  placeholder="john@example.co.uk"
-                >
-                <span class="field__error" id="email-error" role="alert" aria-live="polite"></span>
-              </div>
-
-              <!-- Service Required -->
-              <div class="field">
-                <label for="service">Service Required <span aria-hidden="true">*</span></label>
-                <select
-                  id="service"
-                  name="service"
-                  required
-                  aria-required="true"
-                  aria-describedby="service-error"
-                >
-                  <option value="">Choose a service...</option>
-                  <option value="extension">Extension</option>
-                  <option value="loft-conversion">Loft Conversion</option>
-                  <option value="garage-conversion">Garage Conversion</option>
-                  <option value="roofing">Roofing</option>
-                  <option value="new-build">New Build / Outbuilding</option>
-                  <option value="brickwork">Brickwork / Structural Work</option>
-                  <option value="other">Other</option>
-                </select>
-                <span class="field__error" id="service-error" role="alert" aria-live="polite"></span>
-              </div>
-
-              <!-- Message -->
-              <div class="field">
-                <label for="message">Message <span aria-hidden="true">*</span></label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  required
-                  aria-required="true"
-                  aria-describedby="message-error"
-                  placeholder="Tell us about your project..."
-                ></textarea>
-                <span class="field__error" id="message-error" role="alert" aria-live="polite"></span>
-              </div>
-
-              <button type="submit" class="btn btn--primary btn--full">Send Enquiry</button>
-            </form>
-
-            <!-- Success message -->
-            <div class="form-success" role="status" aria-live="polite" hidden>
-              <p>Thanks for getting in touch. We'll get back to you within 24 hours.</p>
-            </div>
-          </div>
-
-          <!-- Info column -->
           <div class="contact-info">
             <h2 data-reveal>Contact Details</h2>
 
@@ -279,7 +173,7 @@
       <div class="footer__grid">
         <div class="footer__about">
           <a href="index.html" class="logo" aria-label="SS Construction home">
-            <img src="images/logo.svg" alt="" class="logo__icon" width="48" height="48" aria-hidden="true">
+            <img src="images/logo-final.png" alt="" class="logo__icon" width="48" height="48" aria-hidden="true">
             <span class="logo__text">SS Construction</span>
           </a>
           <p>Quality building work across South Essex. Extensions, conversions, roofing, and structural work you can rely on.</p>
@@ -323,6 +217,10 @@
       </div>
     </div>
   </footer>
+
+  <a href="https://wa.me/447513440431?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20building%20project" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 
   <!-- Scripts -->
   <script src="js/nav.js" type="module"></script>
